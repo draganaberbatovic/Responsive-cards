@@ -1,0 +1,65 @@
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+html { 
+	box-sizing: border-box;
+	font-family: sans-serif;
+	min-height: 100%;
+}
+
+body {
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #eee;
+}
+.header {
+	font-family: 'Patrick Hand', cursive;
+	font-size: 22px;
+	text-align: center;
+}
+h3 {
+	font-family: 'Patrick Hand', cursive;
+	font-size: 22px;
+	text-align: center;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.card {
+	width: calc(50% - 14px);
+	border: 1px solid #00000054;
+	border-radius: 5px;
+	margin-bottom: 28px;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30),
+	0 15px 12px rgba(0,0,0,0.22);
+	transition: all 259ms ease-in;
+	transform: scale(1);
+}
+.card:hover {
+	transform: scale(1.1); 
+}
+.cardImage {
+	padding-bottom: 56%;
+	background-color: #00000054;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.cardContent {
+	padding: 0 16px;
+}
+
+
+@media (max-width: 512px) {
+	.card {
+		width: 100%;
+	}
+}
